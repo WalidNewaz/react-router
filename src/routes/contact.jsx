@@ -10,16 +10,6 @@ export async function loader({ params }) {
 export default function Contact() {
     const { contact } = useLoaderData();
 
-
-    // const contact = {
-    //     first: "Your",
-    //     last: "Name",
-    //     avatar: "https://placekitten.com/g/200/200",
-    //     twitter: "your_handle",
-    //     notes: "Some notes",
-    //     favorite: true,
-    // };
-
     return (
         <div id="contact">
             <div>
@@ -60,7 +50,7 @@ export default function Contact() {
                     </Form>
                     <Form
                         method="post"
-                        action="destroy"
+                        action="delete"
                         onSubmit={(event) => {
                             if (
                                 !confirm(
